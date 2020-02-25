@@ -1,0 +1,31 @@
+{
+  "name": "single-sign-on-ts",
+  "version": "1.0.0",
+  "description": "Single Sign On Kata typescript",
+  "author": "540",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "devDependencies": {
+    "@types/node": "~10.17.14",
+    "@types/jest": "~24.9.1",
+    "typescript": "~3.7.5",
+    "jest": "~24.9.0",
+    "ts-jest": "^24.3.0",
+    "tslint": "~5.20.1",
+    "tslint-eslint-rules": "^5.4.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1"
+  },
+  "scripts": {
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "pretest": "npm run lint",
+    "test": "jest -c jest-config.json",
+    "test:watch": "jest -c jest-config.json --watch"
+  }
+}
