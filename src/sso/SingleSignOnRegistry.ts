@@ -1,7 +1,7 @@
-import SSOToken from './SSOToken'
+import SSOToken from './SSOToken';
 
 export default interface SingleSignOnRegistry {
-  registerNewSession(userName: string, password: string): SSOToken
+  registerNewSession(userName: string, password: string): SSOToken | undefined
 
   isValid(token: string): boolean
 

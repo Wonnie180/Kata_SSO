@@ -13,6 +13,14 @@ El "Single Sign On Registry" está desarrollado por otro equipo por lo que no po
 
 Esta kata es útil para prácticar la utilización de diferentes tipos de dobles de tests.
 
+## Iteraciones
+
+Esta kata puede resolverse de muchas maneras pero 3 posibles iteraciones serían:
+
+1. Implementar `handleRequest` usando stubs (válido, inválido, genérico) en la llamada a la validación del token (`isValid`) que devuelva válido o no y en función de ello hacer la lógica debida.
+2. Implementar `handleRegister` usando un fake para registrar la nueva sesión (`registerNewSession`) contra un listado de usuarios-contraseñas y devolver el token asociado a ese usuario.
+3. Implementar `handleUnRegister` usando un espía para comprobar que se hace la eliminación (`unregister`) del token.
+
 ## Credits
 
 Esta es únicamente la versión TypeScript de la kata original. La kata original está publicada en [emilybache github](https://github.com/emilybache/Single-Sign-On-Kata)
